@@ -37,19 +37,19 @@ const IndexPage: FunctionComponent<Props> = ({ bedrockVersions, tags }) => {
   const versions = transformInbound(bedrockVersions)
 
   return (
-    <Layout title='bedrock.dev' description='Minecraft Bedrock Documentation'>
+    <Layout title='bedrock.adodoz.cn' description='Minecraft基岩版文档'>
       <div>
         <div className='bg-gray-50 dark:bg-dark-gray-950 border-b border-gray-200 dark:border-dark-gray-800'>
           <Navbar />
 
           <div className='max-w-screen-sm mx-auto px-4 sm:px-6 md:px-8 py-10 flex flex-col items-center'>
-            <h1 className='font-extrabold text-4xl md:text-5xl leading-10 text-gray-900 dark:text-white'>bedrock.dev</h1>
+            <h1 className='font-extrabold text-4xl md:text-5xl leading-10 text-gray-900 dark:text-white'>bedrock.adodoz.cn</h1>
             <h2 className='mt-4 mb-6 sm:mt-5 font-medium text-xl md:text-2xl text-center leading-tight text-gray-900 dark:text-gray-200'>
-              Minecraft Bedrock Edition Documentation
+              Minecraft基岩版文档
             </h2>
 
             <DocSearch
-              placeHolder='Search the documentation'
+              placeHolder='搜索文档'
               staticPosition={false}
               captureForwardSlash
               className='w-full mx-auto form-input rounded-full dark:text-gray-200 dark:bg-dark-gray-900 dark:border-dark-gray-800 leading-5'
@@ -61,7 +61,7 @@ const IndexPage: FunctionComponent<Props> = ({ bedrockVersions, tags }) => {
           <HomeCard>
             <div className='flex flex-col xl:items-center text-xl font-normal p-3'>
               <h2 className='w-full pb-3 text-xl font-bold'>
-                Version Selection
+                选择版本
               </h2>
               <VersionChooser versions={versions} tags={tags} />
             </div>

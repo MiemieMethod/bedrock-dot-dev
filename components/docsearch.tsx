@@ -10,7 +10,7 @@ type Props = {
   staticPosition: boolean
 }
 
-const DocSearch: FunctionComponent<Props> = ({ captureForwardSlash = true, className, placeHolder = 'Search', staticPosition, }) => {
+const DocSearch: FunctionComponent<Props> = ({ captureForwardSlash = true, className, placeHolder = '搜索', staticPosition, }) => {
   const input = useRef<HTMLInputElement | null>(null)
   const isMobile = useIsMobile()
 
@@ -70,7 +70,7 @@ const DocSearch: FunctionComponent<Props> = ({ captureForwardSlash = true, class
         id='algolia-doc-search'
         className={className}
         type='search'
-        placeholder={`${placeHolder}${!isMobile && captureForwardSlash ? ' ("/" to focus)' : ''}`}
+        placeholder={`${placeHolder}${!isMobile && captureForwardSlash ? '（"/"以深度搜索）' : ''}`}
         ref={input}
       />
     </div>

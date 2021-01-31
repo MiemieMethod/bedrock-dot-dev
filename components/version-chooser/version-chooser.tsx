@@ -95,14 +95,14 @@ const VersionChooser: FunctionComponent<VersionChooserProps> = ({ versions, tags
               checked={!quickSelect}
               onChange={({ target: { checked } }) => setQuickSelect(!checked)}
             />
-            <span className='ml-2 text-sm select-none'>View all versions</span>
+            <span className='ml-2 text-sm select-none'>浏览所有版本</span>
           </label>
         </div>
       </div>
 
       <div className='w-full flex flex-col mt-2'>
         <label className='block text-sm font-bold mb-2'>
-          File Selection
+          选择文件
         </label>
         <div className='overflow-y-auto w-full flex flex-wrap bg-gray-50 dark:bg-dark-gray-900 border border-gray-200 dark:border-dark-gray-800 p-2 rounded-lg'>
           {files.map((file) => (

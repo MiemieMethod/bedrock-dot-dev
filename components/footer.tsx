@@ -18,13 +18,13 @@ const Footer: FunctionComponent<Props> = ({ darkClassName = 'bg-dark-gray-950', 
       <div className='max-w-screen-lg mx-auto'>
         <div className='flex flex-wrap justify-center font-medium'>
           <div className='px-2 pb-3 text-gray-500 dark:text-gray-300'>
-            Website by {' '}
+            网站作者：{' '}
             <a className='link' href='https://thedestruc7i0n.ca' target='_blank' rel='noopener'>
               TheDestruc7i0n
             </a>
           </div>
           <div className='px-2 pb-3'>
-            <a href='https://patreon.com/destruc7i0n' className='link' target='_blank' rel='noopener'>Donate</a>
+            <a href='https://patreon.com/destruc7i0n' className='link' target='_blank' rel='noopener'>捐助</a>
           </div>
         </div>
         <div className='flex flex-wrap justify-center font-medium'>
