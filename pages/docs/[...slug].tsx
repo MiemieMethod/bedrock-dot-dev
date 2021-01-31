@@ -64,24 +64,24 @@ const Docs: FunctionComponent<Props> = ({ html, bedrockVersions, tags, parsedDat
   }
 
   const sidebar: SidebarStructure = (parsedData && parsedData.sidebar) || {}
-  let title = 'Loading...'
+  let title = '加载中……'
   let description = ''
   if (parsedData?.title) {
     const { title: documentTitle, version } = parsedData.title
-    title = `${documentTitle} Documentation | ${version} | bedrock.dev`
-    description = `Minecraft Bedrock ${documentTitle} Documentation Version ${version}`
+    title = `${documentTitle}文档 | ${version} | bedrock.adodoz.cn`
+    description = `Minecraft基岩版${documentTitle}文档 - 版本：${version}`
 
     // custom titles for version tag
     if (versionTag) {
       switch (versionTag) {
         case Tags.Stable: {
-          title = `${documentTitle} Documentation | bedrock.dev`
-          description = `Minecraft Bedrock ${documentTitle} Documentation`
+          title = `${documentTitle}文档 | bedrock.adodoz.cn`
+          description = `Minecraft基岩版${documentTitle}文档`
           break
         }
         case Tags.Beta: {
-          title = `Beta ${documentTitle} Documentation | bedrock.dev`
-          description = `Minecraft Bedrock Beta ${documentTitle} Documentation`
+          title = `测试版${documentTitle}文档 | bedrock.adodoz.cn`
+          description = `Minecraft基岩版测试版${documentTitle}文档`
           break
         }
         default: break

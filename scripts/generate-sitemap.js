@@ -13,7 +13,7 @@ if (!process.env.VERCEL_GITHUB_DEPLOYMENT && process.platform !== 'darwin') {
 }
 
 const main = async () => {
-  const stream = new SitemapStream( { hostname: 'https://bedrock.dev' } )
+  const stream = new SitemapStream( { hostname: 'https://bedrock.adodoz.cn' } )
 
   stream.write({
     url: '/',

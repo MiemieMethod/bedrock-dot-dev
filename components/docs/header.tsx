@@ -49,11 +49,11 @@ const Header: FunctionComponent = () => {
           )}
           <h1 className='mr-3 text-2xl'>
             <Link href='/'>
-              <a className='font-normal text-black hover:text-gray-900 dark:text-white dark-hover:text-white'>bedrock.dev</a>
+              <a className='font-normal text-black hover:text-gray-900 dark:text-white dark-hover:text-white'>bedrock.adodoz.cn</a>
             </Link>
           </h1>
           <ul className='hidden md:flex'>
-            <HeaderLink link='https://wiki.bedrock.dev' title='Wiki' />
+            <HeaderLink link='https://wiki.adodoz.cn/' title='Wiki' />
           </ul>
         </div>
         <div className='flex flex-1 md:flex-initial'>

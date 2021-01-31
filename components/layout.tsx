@@ -8,7 +8,7 @@ type Props = {
 
 const Layout: FunctionComponent<Props> = ({
   children,
-  title = 'bedrock.dev',
+  title = 'bedrock.adodoz.cn',
   description= '',
 }) => (
   <div>
