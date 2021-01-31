@@ -29,12 +29,12 @@ const Footer: FunctionComponent<Props> = ({ darkClassName = 'bg-dark-gray-950', 
         </div>
         <div className='flex flex-wrap justify-center font-medium'>
           <div className='px-2 pb-3'>
-            <a className='link' href='https://github.com/destruc7i0n/bedrock-dot-dev' target='_blank' rel='noopener'>GitHub</a>
+            <a className='link' href='https://github.com/MiemieMethod/bedrock-dot-dev' target='_blank' rel='noopener'>GitHub</a>
           </div>
         </div>
         <div className='flex flex-wrap justify-center text-gray-500 dark:text-gray-400 font-medium'>
           <div className='px-2 pb-3'>
-            <p>This website is not affiliated with Mojang Studios</p>
+            <p>本网站与Mojang Studios无关</p>
           </div>
         </div>
 
